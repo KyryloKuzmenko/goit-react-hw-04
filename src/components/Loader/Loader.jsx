@@ -1,7 +1,12 @@
-import { MagnifyingGlass } from "react-loader-spinner";
+import { MagnifyingGlass } from 'react-loader-spinner';
+import style from './Loader.module.css';
 
 const Loader = () => {
-    return <MagnifyingGlass />
+  return (
+    <div className={style.loader}>
+      <MagnifyingGlass />
+    </div>
+  );
 };
 
 export default Loader;

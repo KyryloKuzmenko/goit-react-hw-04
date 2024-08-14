@@ -8,6 +8,17 @@
 }
 
 .btn {
+      margin-left: 20px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  padding: 0.3em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  color: rgb(130, 130, 130);
     transition: color 0.4s ease, background-color 0.4s ease, border 0.4s ease;
 }
 

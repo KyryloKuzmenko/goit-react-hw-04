@@ -2,6 +2,7 @@ import { useState } from 'react';
 import style from './SearchBar.module.css';
 import toast from 'react-hot-toast';
 
+
 const SearchBar = ({ onSubmit }) => {
   const [query, setQuery] = useState('');
 
@@ -12,7 +13,10 @@ const SearchBar = ({ onSubmit }) => {
   const handleSubmit = event => {
     event.preventDefault();
     if (query.trim() === '') {
-      toast("Can't be empty");
+      toast.error("Can't be empty", {
+        duration: 3000,
+        position: "top"
+      });
       return;
     }
     onSubmit(query);
